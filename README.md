@@ -46,11 +46,11 @@ You can find how to generate the files [here](https://gist.github.com/fntlnz/cf1
 Once you've done that, copy your rootCA file on the raspberry and add it to the client.conf file under the `RootCA` option.
 The key file and the certificate have to be on your server, add them to the server.conf file.
 
-# Andvanced usage
+# Advanced usage
 The server.py file is just a simple http server. That means that you can use another software to send the http request. Here is an example for cURL:
 
 ```bash
-curl -X POST -H "x-access: <Your password>" https://<Server IP>:<Port>/start_game
+curl -X POST -H "x-access: <Your password>" http://<Server IP>:<Port>/start_game
 ```
 
 Default port is 4242.
